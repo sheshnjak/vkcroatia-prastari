@@ -33,7 +33,7 @@ function galerija(){		/* prikazuje tumbnail-ove slika u galeriji */
 }
 function prikaz(index){	/* prikazuje odabranu sliku u iston prozoru(brise sadrzaj) */
 		window.name = index;
-		window.location.href = "foto_galerija_prikaz.htm";
+		window.location.href = "foto_galerija_prikaz.html";
 }
 function nazad(){	/* prikazuje prethodnu sliku u galeriji	*/
 	if(window.name == 0) otvori_galeriju();
@@ -43,7 +43,7 @@ function naprid(){	/* prikazuje slijedecu sliku u galeriji	*/
 	if(window.name == (slike.length - 1)) otvori_galeriju();
 	else prikaz(++window.name);
 }
-function otvori_galeriju(){window.location.href = "foto_galerija.htm";}	/* vraca se u galeriju	*/
+function otvori_galeriju(){window.location.href = "foto_galerija.html";}	/* vraca se u galeriju	*/
 /* funkcije za englesku verziju stranica (isto ime sa prefikson "en_"	*/
 function en_galerija(){
 	for(i = 0; i < slike.length; i++){
@@ -53,7 +53,7 @@ function en_galerija(){
 }
 function en_prikaz(index){
 	window.name = index;
-	window.location.href = "photo_gallery_show.htm";
+	window.location.href = "photo_gallery_show.html";
 }
 function en_nazad(){
 	if(window.name == 0) en_otvori_galeriju();
@@ -63,4 +63,4 @@ function en_naprid(){
 	if(window.name == (slike.length - 1)) en_otvori_galeriju();
 	else en_prikaz(++window.name);
 }
-function en_otvori_galeriju(){window.location.href = "photo_gallery.htm";}
+function en_otvori_galeriju(){window.location.href = "photo_gallery.html";}
